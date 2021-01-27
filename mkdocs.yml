@@ -22,20 +22,29 @@ min_search_length: 2
 # 테스팅 사이트 설정(로컬 서버)
 dev_addr: '127.0.0.1:8000'
 
+# 추가 Css
+extra_css:
+    - extra/page
+
 # 사이드바
 nav:
-    - Introduction: 'index.md'
+    - 시작하기: 'index.md'
 
 # 테마링
 theme:
+    # 기본 설정
     name: material
+    custom_dir: overrides
 
     # 테마
     palette:
         scheme: slate
         primary: deep purple
-    
-    
+        accent: deep purple
+
+    # 세부기능 Flag
+    features:
+        - toc.integrate
 
     # 404 page
     static_templates:
