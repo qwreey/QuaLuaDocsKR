@@ -1,22 +1,61 @@
 site_name: Lua 한국어 위키
+site_url: https://qwreey75.github.io/luakrdoc/
+site_author: Qwreey and more
+site_description: lua 5.3 wiki for korean
+
+repo_name: luakrdoc
+repo_url: https://github.com/qwreey75/luakrdoc
+edit_uri: ""
+
+remote_branch: master
+docs_dir: docroot
+site_dir: docs
 
 theme:
-  name: null
-  custom_dir: material
+    name: null
+    custom_dir: material
 
-  # 404 page
-  static_templates:
-    - 404.html
+    # 404 page
+    static_templates:
+      - 404.html
 
-  # Necessary for search to work properly
-  include_search_page: false
-  search_index_only: true
+    # Necessary for search to work properly
+    include_search_page: false
+    search_index_only: true
 
-  # Default values, taken from mkdocs_theme.yml
-  language: en
-  font:
-    text: Roboto
-    code: Roboto Mono
-  favicon: assets/favicon.png
-  icon:
-    logo: logo
+    # Default values, taken from mkdocs_theme.yml
+    language: en
+    font:
+        text: Roboto
+        code: Roboto Mono
+    favicon: assets/favicon.png
+    icon:
+        logo: logo
+    
+markdown_extensions:
+    - attr_list
+    - admonition
+    - codehilite:
+          guess_lang: false
+    - toc:
+          permalink: true
+    - def_list
+    - meta
+    - pymdownx.arithmatex
+    - pymdownx.betterem:
+          smart_enable: all
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.emoji:
+          emoji_generator: !!python/name:pymdownx.emoji.to_svg
+    - pymdownx.inlinehilite
+    - pymdownx.keys
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tasklist:
+          custom_checkbox: true
+    - pymdownx.tilde
+    - footnotes
