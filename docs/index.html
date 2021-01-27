@@ -15,7 +15,7 @@
       
         <link rel="canonical" href="https://qwreey75.github.io/luakrdoc/">
       
-      <link rel="shortcut icon" href="assets/favicon.png">
+      <link rel="shortcut icon" href="assets/LUAICON_TP.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.6">
     
     
@@ -31,7 +31,7 @@
         
           
           
-          <meta name="theme-color" content="#7e56c2">
+          <meta name="theme-color" content="#ab47bd">
         
       
     
@@ -46,6 +46,8 @@
     
     
     
+      <link rel="stylesheet" href="extra/page">
+    
     
       
     
@@ -58,7 +60,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="purple" data-md-color-accent="deep-purple">
       
   
     
@@ -83,8 +85,7 @@
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://qwreey75.github.io/luakrdoc/" title="Lua 한국어 위키" class="md-header-nav__button md-logo" aria-label="Lua 한국어 위키">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89"><path d="M3.136 17.387v42.932l42.932 21.467L3.136 17.387z"/><path d="M21.91 8l42.933 64.398-18.775 9.388L3.136 17.387 21.91 8z" fill-opacity=".5"/><path d="M67.535 17.387L40.273 35.543l21.878 32.818 5.384 2.691V17.387z"/><path d="M67.535 17.387v53.666l18.774-9.388V8l-18.774 9.387z" fill-opacity=".25"/></svg>
+  <img src="assets/LUAICON_TP.png" alt="logo">
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -100,7 +101,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Introduction
+              시작하기
             
           </span>
         </div>
@@ -172,12 +173,13 @@
 
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://qwreey75.github.io/luakrdoc/" title="Lua 한국어 위키" class="md-nav__button md-logo" aria-label="Lua 한국어 위키">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89"><path d="M3.136 17.387v42.932l42.932 21.467L3.136 17.387z"/><path d="M21.91 8l42.933 64.398-18.775 9.388L3.136 17.387 21.91 8z" fill-opacity=".5"/><path d="M67.535 17.387L40.273 35.543l21.878 32.818 5.384 2.691V17.387z"/><path d="M67.535 17.387v53.666l18.774-9.388V8l-18.774 9.387z" fill-opacity=".25"/></svg>
+  <img src="assets/LUAICON_TP.png" alt="logo">
 
     </a>
     Lua 한국어 위키
@@ -215,12 +217,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Introduction
+          시작하기
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="." class="md-nav__link md-nav__link--active">
-        Introduction
+        시작하기
       </a>
       
         
@@ -264,44 +266,6 @@
                 </div>
               </div>
             
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary" aria-label="목차">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      목차
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
             
           
           <div class="md-content">
@@ -362,7 +326,7 @@ docs/
       <script>
         app = initialize({
           base: ".",
-          features: [],
+          features: ['toc.integrate'],
           search: Object.assign({
             worker: "assets/javascripts/worker/search.9c0e82ba.min.js"
           }, typeof search !== "undefined" && search)

@@ -29,6 +29,7 @@ extra_css:
 # 사이드바
 nav:
     - 시작하기: 'index.md'
+    
 
 # 테마링
 theme:
@@ -39,55 +40,62 @@ theme:
     # 테마
     palette:
         scheme: slate
-        primary: deep purple
+        primary: purple
         accent: deep purple
 
     # 세부기능 Flag
     features:
         - toc.integrate
 
-    # 404 page
+    # 결과 없음 페이지
     static_templates:
       - 404.html
 
-    # Necessary for search to work properly
-    include_search_page: false
-    search_index_only: true
-
-    # Default values, taken from mkdocs_theme.yml
+    # 언어/폰트
     language: kr
     font:
         text: Roboto
         code: Roboto Mono
-    favicon: assets/favicon.png
-    icon:
-        logo: logo
+
+    # 아이콘
+    favicon: assets/LUAICON_TP.png
+    logo: assets/LUAICON_TP.png
+
+    # 일부 설정
+    include_search_page: false
+    search_index_only: true
 
 # Markdown 플러그인
 markdown_extensions:
-    - attr_list
-    - admonition
-    - codehilite:
+    - pymdownx.tabbed # 탭
+    - admonition # 노트라인
+    - pymdownx.details # 더보기(확장 가능한 라벨)
+    - abbr # 줄임말 표현 세부정보 붇이기
+    - attr_list # 리스트 추가사항
+    - def_list # 기본 리스트
+
+    # 기초 설정
+    - codehilite: # 코드 자동분석 끄기
           guess_lang: false
-    - toc:
+    - toc: # 부분 링크 허용
           permalink: true
-    - def_list
-    - meta
+    - pymdownx.emoji: # 이모지 불러오기
+          emoji_generator: !!python/name:pymdownx.emoji.to_svg
+    - pymdownx.tasklist: # 체크박스 불러오기
+          custom_checkbox: true
+    
+    # 나도 잘 모르겠는 기타 설정
+    - meta # 메타데이터 관련
+    - pymdownx.inlinehilite # `인라인 코드`
+    - footnotes # 바닥글
     - pymdownx.arithmatex
-    - pymdownx.betterem:
-          smart_enable: all
     - pymdownx.caret
     - pymdownx.critic
-    - pymdownx.details
-    - pymdownx.emoji:
-          emoji_generator: !!python/name:pymdownx.emoji.to_svg
-    - pymdownx.inlinehilite
     - pymdownx.keys
     - pymdownx.magiclink
     - pymdownx.mark
     - pymdownx.smartsymbols
     - pymdownx.superfences
-    - pymdownx.tasklist:
-          custom_checkbox: true
     - pymdownx.tilde
-    - footnotes
+    - pymdownx.betterem:
+          smart_enable: all
