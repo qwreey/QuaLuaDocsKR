@@ -2,7 +2,7 @@ site_name: Lua 한국어 위키
 
 theme:
   name: null
-  custom_dir: mkdocs-material/material
+  custom_dir: material
 
   # 404 page
   static_templates:
