@@ -28,8 +28,7 @@ nav:
 
 # 테마링
 theme:
-    name: null
-    custom_dir: material
+    name: material
 
     # 404 page
     static_templates:
