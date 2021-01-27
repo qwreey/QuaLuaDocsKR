@@ -1,16 +1,32 @@
+# 사이트 기본 설정
 site_name: Lua 한국어 위키
 site_url: https://qwreey75.github.io/luakrdoc/
 site_author: Qwreey and more
 site_description: lua 5.3 wiki for korean
 
+# 리포 설정
 repo_name: luakrdoc
 repo_url: https://github.com/qwreey75/luakrdoc
 edit_uri: ""
 
+# 벤치 설정-사이트dir 설정, 저장소 하나로 관리하기 위해서 이렇게 씀
 remote_branch: master
 docs_dir: docroot
 site_dir: docs
 
+# 검색엔진 설정
+# TODO : 검색 엔진 언어 변경
+lang: ja #한국어가 없고 중국어도 없어서 일단 일어로 먹여봄
+min_search_length: 2
+
+# 테스팅 사이트 설정(로컬 서버)
+dev_addr: '127.0.0.1:8000'
+
+# 사이드바
+nav:
+    - Introduction: 'index.md'
+
+# 테마링
 theme:
     name: null
     custom_dir: material
@@ -31,7 +47,8 @@ theme:
     favicon: assets/favicon.png
     icon:
         logo: logo
-    
+
+# Markdown 플러그인
 markdown_extensions:
     - attr_list
     - admonition
