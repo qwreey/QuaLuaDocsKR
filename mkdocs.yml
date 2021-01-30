@@ -75,6 +75,7 @@ plugins:
         exclude:
             - acknowledgements.md
             - addons.md
+    - macros
 
 # Markdown 플러그인
 markdown_extensions:
