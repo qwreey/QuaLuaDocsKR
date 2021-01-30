@@ -29,24 +29,15 @@
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
         
-          
-          
-          <meta name="theme-color" content="#ab47bd">
-        
       
     
     
     
       
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
-      
     
     
     
-      <link rel="stylesheet" href="../extra/page.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
     
       
@@ -60,7 +51,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="purple" data-md-color-accent="deep-purple">
+    <body dir="ltr" data-md-color-scheme="custom" data-md-color-primary="" data-md-color-accent="">
       
   
     
@@ -85,7 +76,7 @@
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://qwreey75.github.io/luakrdoc/" title="Lua 한국어 위키" class="md-header-nav__button md-logo" aria-label="Lua 한국어 위키">
       
-  <img src="../assets/LUAICON_TP.png" alt="logo">
+  <img src="../assets/LUAICON_DARK.png" alt="logo">
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -179,7 +170,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="https://qwreey75.github.io/luakrdoc/" title="Lua 한국어 위키" class="md-nav__button md-logo" aria-label="Lua 한국어 위키">
       
-  <img src="../assets/LUAICON_TP.png" alt="logo">
+  <img src="../assets/LUAICON_DARK.png" alt="logo">
 
     </a>
     Lua 한국어 위키
@@ -262,7 +253,28 @@
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
-    이 문서에 사용된 모든 외부 소스입니다
+    이 페이지에 사용된 모든 외부 소스입니다
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    페이지 제공자
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mkdoc-plugin" class="md-nav__link">
+    사용된 모든 Mkdoc plugin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pymdown-extensions" class="md-nav__link">
+    사용된 모든 Pymdown-Extensions
   </a>
   
 </li>
@@ -294,10 +306,14 @@
 <p>Qwreey</p>
 </blockquote>
 <hr />
-<h2 id="_3">이 문서에 사용된 모든 외부 소스입니다<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="_3">이 페이지에 사용된 모든 외부 소스입니다<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ol>
 <li><a href="https://github.com/naver/d2codingfont">D2coding</a><ul>
 <li>코드 블럭 안의 글자의 폰트입니다, OFL 라이센스를 따라 사용되었습니다</li>
+</ul>
+</li>
+<li><a href="http://company.gmarket.co.kr/company/about/company/company--font.asp">GmarketSansMedium</a><ul>
+<li>웹페이지의 기본 글자 폰트입니다,  라이센스에 대한 자세한 사항은 링크를 참고하세요</li>
 </ul>
 </li>
 <li><a href="https://github.com/mkdocs/mkdocs/">Mkdocs</a><ul>
@@ -309,11 +325,99 @@
 </ul>
 </li>
 </ol>
+<hr />
+<h2 id="_4">페이지 제공자<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>이 페이지는 Github pages 에 의해 호스팅됩니다</p>
+<hr />
+<h2 id="mkdoc-plugin">사용된 모든 Mkdoc plugin<a class="headerlink" href="#mkdoc-plugin" title="Permanent link">&para;</a></h2>
+<ol>
+<li>search<ul>
+<li>검색엔진 구현을 위해 사용되었습니다</li>
+</ul>
+</li>
+<li>exclude-search<ul>
+<li>페이지 검색 가능 여부를 제어하기 위해 사용되었습니다</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="pymdown-extensions">사용된 모든 Pymdown-Extensions<a class="headerlink" href="#pymdown-extensions" title="Permanent link">&para;</a></h2>
+<ol>
+<li>pymdownx.tabbed<ul>
+<li>탭을 표시하는데 사용되었습니다</li>
+</ul>
+</li>
+<li>admonition<ul>
+<li>노트라인,부분따옴 블럭을 표시하는데 사용되었습니다</li>
+</ul>
+</li>
+<li>pymdownx.details<ul>
+<li>더보기 블럭을 표시하는데 사용되었습니다</li>
+</ul>
+</li>
+<li>pymdownx.progressbar<ul>
+<li>프로그래스바를 표시하는데 사용되었습니다</li>
+</ul>
+</li>
+<li>attr_list , def_list<ul>
+<li>리스트를 표현하는데 사용되었습니다</li>
+</ul>
+</li>
+<li>footnotes<ul>
+<li>바닥글(주석 기능) 을 위해 사용되었습니다</li>
+</ul>
+</li>
+<li>pymdownx.superfences<ul>
+<li>스페이스 관련, 펜스 중첩 관련 플러그인입니다</li>
+</ul>
+</li>
+<li>pymdownx.keys</li>
+<li>pymdownx.magiclink</li>
+<li>pymdownx.snippets<ul>
+<li>외부 md 파일을 불러오는데 사용됩니다</li>
+</ul>
+</li>
+<li>pymdownx.inlinehilite<ul>
+<li>인라인 텍스트를 코드취급하여 하이라이팅하는데 사용됩니다</li>
+</ul>
+</li>
+<li>pymdownx.highlight<ul>
+<li>코드 구문강조에 사용됩니다</li>
+</ul>
+</li>
+<li>pymdownx.emoji<ul>
+<li>이모지를 불러오는데 사용됩니다 :check:</li>
+</ul>
+</li>
+<li>pymdownx.tasklist
+    Checkbox 를 표현하는데 사용되었습니다</li>
+<li>pymdownx.betterem<ul>
+<li>더 나은 글자 서식 알고리즘</li>
+</ul>
+</li>
+<li>pymdownx.smartsymbols<ul>
+<li>일부 특수문자를 표현하는데 사용되었습니다</li>
+</ul>
+</li>
+<li>codehilite</li>
+<li>toc<ul>
+<li>단락 링크 허용을 위해 사용되었습니다</li>
+</ul>
+</li>
+<li>meta<ul>
+<li>메타데이터 구현을 위해 사용되었습니다</li>
+</ul>
+</li>
+</ol>
                 
               
               
                 
 
+
+  <h2 id="__comments">댓글</h2>
+  <div id="disqus_thread"></div>
+  <script>var disqus_config=function(){this.page.url="https://qwreey75.github.io/luakrdoc/acknowledgements/",this.page.identifier="acknowledgements/"};window.addEventListener("load",function(){var e=document,i=e.createElement("script");i.src="//luakrdoc.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)})</script>
 
               
             </article>

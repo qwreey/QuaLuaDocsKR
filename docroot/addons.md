@@ -18,7 +18,22 @@
 
     네칸씩 띄워서 내부 아이템을 만듭니다  
     ```lua
-        print("코드라인 또한 가능합니다")
+    -- 테마 테스팅
+
+    -- comment line
+    function func(arg1)
+        local str = "string"
+        for i = 1,5 do
+            print(string.rep("Hello World",i))
+        end
+        return {
+            Text = str;
+            Boolean = true;
+            Null = nil;
+        }
+    end
+    print(func())
+    print(string)
     ```
 
 === "탭2"
@@ -26,3 +41,6 @@
     개속해서 쓰기가 가능합니다.  
     탭 구분마다 위아래로 라인 브레이킹도 있어야됩니다  
 
+| 리스트 | 리스트 |
+| -- | -- |
+| 1 | 2 |

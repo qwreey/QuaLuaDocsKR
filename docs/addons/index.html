@@ -29,24 +29,15 @@
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
         
-          
-          
-          <meta name="theme-color" content="#ab47bd">
-        
       
     
     
     
       
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
-      
     
     
     
-      <link rel="stylesheet" href="../extra/page.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
     
       
@@ -60,7 +51,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="purple" data-md-color-accent="deep-purple">
+    <body dir="ltr" data-md-color-scheme="custom" data-md-color-primary="" data-md-color-accent="">
       
   
     
@@ -80,7 +71,7 @@
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://qwreey75.github.io/luakrdoc/" title="Lua 한국어 위키" class="md-header-nav__button md-logo" aria-label="Lua 한국어 위키">
       
-  <img src="../assets/LUAICON_TP.png" alt="logo">
+  <img src="../assets/LUAICON_DARK.png" alt="logo">
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -174,7 +165,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="https://qwreey75.github.io/luakrdoc/" title="Lua 한국어 위키" class="md-nav__button md-logo" aria-label="Lua 한국어 위키">
       
-  <img src="../assets/LUAICON_TP.png" alt="logo">
+  <img src="../assets/LUAICON_DARK.png" alt="logo">
 
     </a>
     Lua 한국어 위키
@@ -257,7 +248,37 @@
 </details>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">탭1</label><div class="tabbed-content">
 <p>네칸씩 띄워서 내부 아이템을 만듭니다<br />
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;코드라인 또한 가능합니다&quot;</span><span class="p">)</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">-- 테마 테스팅</span>
+
+<span class="c1">-- comment line</span>
+<span class="kr">function</span> <span class="nf">func</span><span class="p">(</span><span class="n">arg1</span><span class="p">)</span>
+    <span class="kd">local</span> <span class="n">str</span> <span class="o">=</span> <span class="s2">&quot;string&quot;</span>
+    <span class="kr">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span><span class="mi">5</span> <span class="kr">do</span>
+        <span class="nb">print</span><span class="p">(</span><span class="nb">string.rep</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">,</span><span class="n">i</span><span class="p">))</span>
+    <span class="kr">end</span>
+    <span class="kr">return</span> <span class="p">{</span>
+        <span class="n">Text</span> <span class="o">=</span> <span class="n">str</span><span class="p">;</span>
+        <span class="n">Boolean</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="n">Null</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="kr">end</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">func</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table></p>
 </div>
@@ -266,11 +287,29 @@
 탭 구분마다 위아래로 라인 브레이킹도 있어야됩니다  </p>
 </div>
 </div>
+<table>
+<thead>
+<tr>
+<th>리스트</th>
+<th>리스트</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
                 
               
               
                 
 
+
+  <h2 id="__comments">댓글</h2>
+  <div id="disqus_thread"></div>
+  <script>var disqus_config=function(){this.page.url="https://qwreey75.github.io/luakrdoc/addons/",this.page.identifier="addons/"};window.addEventListener("load",function(){var e=document,i=e.createElement("script");i.src="//luakrdoc.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)})</script>
 
               
             </article>
