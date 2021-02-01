@@ -4,10 +4,7 @@ subtitle: 홈
 written_by: Qwreey
 when_edited: 2021 1/11 9:16
 ---
-
-> 부제 : {{ page.meta.subtitle }}
-> 작성 : {{ page.meta.written_by }} | 최근 수정 : {{ page.meta.when_edited }}
----
+{% include "headinfo.md" %}
 
 ## lua 의 세게에 오신것을 환영합니다!
 이 github 페이지는 lua 를 처음 다루는 사람들을 위한 한글 위키입니다!
