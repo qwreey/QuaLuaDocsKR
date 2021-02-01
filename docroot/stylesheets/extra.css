@@ -22,6 +22,16 @@ code {
   font-family: D2Coding;
 }
 
+/*메크로 변수 리스트 배경 색깔 지정*/
+table.pretty {
+  background-color: #262929 !important;
+}
+
+/*테이블 최소 길이*/
+th {
+  min-width: 5.8em !important;
+}
+
 [data-md-color-scheme="custom"] {
   /*글자 색깔*/
   --md-default-fg-color: rgb(225, 215, 225);
@@ -84,4 +94,3 @@ code {
   --md-code-hl-generic-color: var(--md-default-fg-color--light);
   --md-code-hl-variable-color: var(--md-default-fg-color--light);
 }
-

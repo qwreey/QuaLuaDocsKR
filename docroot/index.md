@@ -1,12 +1,12 @@
 ---
 title: 시작하기
 subtitle: 홈
-written-by: Qwreey
-when-edited: 2021 1/11 9:16
+written_by: Qwreey
+when_edited: 2021 1/11 9:16
 ---
 
 > 부제 : {{ page.meta.subtitle }}
-> 작성 : {{ page.meta.written }} | 최근 수정 : {{ page.meta.when-edited }}
+> 작성 : {{ page.meta.written_by }} | 최근 수정 : {{ page.meta.when_edited }}
 ---
 
 ## lua 의 세게에 오신것을 환영합니다!
