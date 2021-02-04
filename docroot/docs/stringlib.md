@@ -34,12 +34,11 @@ when_edited: 2021 2/1 4:10
 
 예제
 ```lua
+-- 패턴 검색
 local start,end = string.find("abcd 1234","%d")
 print("가장 첫번째로 발견된 숫자의 위치는 " .. start .. " 입니다")
 
-
---
----------
+-- 플레인 검색
 print(string.find("hello. lua",".",1,true))
 -- 패턴에서의 . 이 아닌 그대로 . 을 검색합니다 
 

@@ -445,13 +445,11 @@
  7
  8
  9
-10
-11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">start</span><span class="p">,</span><span class="kr">end</span> <span class="o">=</span> <span class="nb">string.find</span><span class="p">(</span><span class="s2">&quot;abcd 1234&quot;</span><span class="p">,</span><span class="s2">&quot;%d&quot;</span><span class="p">)</span>
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">-- 패턴 검색</span>
+<span class="kd">local</span> <span class="n">start</span><span class="p">,</span><span class="kr">end</span> <span class="o">=</span> <span class="nb">string.find</span><span class="p">(</span><span class="s2">&quot;abcd 1234&quot;</span><span class="p">,</span><span class="s2">&quot;%d&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;가장 첫번째로 발견된 숫자의 위치는 &quot;</span> <span class="o">..</span> <span class="n">start</span> <span class="o">..</span> <span class="s2">&quot; 입니다&quot;</span><span class="p">)</span>
 
-
-<span class="c1">--</span>
-<span class="c1">---------</span>
+<span class="c1">-- 플레인 검색</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">string.find</span><span class="p">(</span><span class="s2">&quot;hello. lua&quot;</span><span class="p">,</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="kc">true</span><span class="p">))</span>
 <span class="c1">-- 패턴에서의 . 이 아닌 그대로 . 을 검색합니다 </span>
 
