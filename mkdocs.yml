@@ -26,12 +26,16 @@ extra_css:
     - stylesheets/extra.css
 
 # 다른 설정
-extra:
-  disqus: luakrdoc # 디스커스 설정
+#extra:
+#  disqus: luakrdoc # 디스커스 설정
 
 # 사이드바
 nav:
     - 시작하기: 'index.md'
+    - 자료형:
+        - 문자열: 'docs/stringvar.md'
+    - 라이브러리:
+        - 문자열 라이브러리: 'docs/stringlib.md'
     - 기여자: 'acknowledgements.md'
 
 # 테마링
@@ -48,7 +52,8 @@ theme:
 
     # 세부기능 Flag
     features:
-        - toc.integrate
+        - toc.integrate # 목차를 네비게이션에 합치기
+        - navigation.instant # 빠른 페이지 로드
 
     # 결과 없음 페이지
     static_templates:
@@ -92,7 +97,6 @@ markdown_extensions:
     - pymdownx.superfences # 스페이스 관현, 펜스 중첩허용
     - pymdownx.keys # 단축키(검색)
     - pymdownx.magiclink # 링크 확장기
-    - pymdownx.snippets # 외부 md 로더
     - pymdownx.inlinehilite # 인라인 코드 하이라이팅
     - pymdownx.highlight: # 코드 구문강조
         linenums: true # 코드라인 넘버
@@ -104,6 +108,8 @@ markdown_extensions:
           smart_enable: all
     - pymdownx.smartsymbols: # 특수문자 쉬운입력
         fractions: false
+    - markdown_include.include: # 다른 md 파일 가져와서 보여주기
+        base_path: docroot
     
     # 기타 세부 설정
     - codehilite: # 코드 언어 추측 끄기
@@ -112,7 +118,8 @@ markdown_extensions:
           permalink: true
     - meta # 메타데이터 관련
     
-    # 사용되지 않는 플러그인      
+    # 사용되지 않는 플러그인
+    #- pymdownx.snippets # 외부 md 로더
     #- pymdownx.tilde #아래첨자 단순화
     #- pymdownx.arithmatex # 수학적 표현 표시
     #- pymdownx.caret # ^ 기호로 글자 서식 추가

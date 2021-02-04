@@ -27,9 +27,16 @@ table.pretty {
   background-color: #262929 !important;
 }
 
-/*테이블 최소 길이*/
+/*테이블 해더 꾸미기*/
 th {
-  min-width: 5.8em !important;
+  min-width: 5.8em !important; /*최소 길이*/
+  color: rgb(255 255 255) !important; /*글자 색깔*/
+  background-color: rgb(26 27 31) !important; /*배경 색깔*/
+  border-bottom: .05em solid var(--md-accent-fg-color) !important; /*라인*/
+}
+/*테이블 아이템 꾸미기*/
+td {
+  background-color: rgb(47 49 60) !important; /*배경 색깔*/
 }
 
 [data-md-color-scheme="custom"] {
