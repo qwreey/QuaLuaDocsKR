@@ -8,10 +8,9 @@ local Settings,SaveSettings = {},nil do
 
     -- Decode string
     local settingstable = {}
-    for VarName,VarValue in string.gmatch(settingsstr,"(.-): (.-)\n") do
-        print(VarName,VarValue)
+    string.gsub(settingsstr,"(.-): (.-)\n",function(VarName,VarValue)
         settingstable[VarName] = VarValue
-    end
+    end)
     
     -- settings class
     local settingsmt = {
@@ -40,11 +39,11 @@ local Settings,SaveSettings = {},nil do
     end
 end
 
-
 os.execute("mkdocs build")
 os.execute("git add .")
-os.execute(("git commit -m '%s'"):format((Settings.commit_comment):format(Settings.commit_version)))
+os.execute(("git commit -m \"%s\""):format(Settings.commit_comment):format(Settings.commit_version))
 os.execute("git push")
+
 
 Settings.commit_version = tostring(tonumber(Settings.commit_version) + 1)
 
