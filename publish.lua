@@ -1,5 +1,4 @@
 local Settings,SaveSettings = {},nil do
-
     -- Read file
     local settingsfile = io.open("settings.txt","r+")
     local settingsstr = (settingsfile:read("a") .. "\n") or ""
