@@ -1,10 +1,19 @@
 local Settings,SaveSettings = {},nil do
-    local settingsfile = io.open("settings.txt","w")
+
+    -- Read file
+    local settingsfile = io.open("settings.txt","r+")
+    local settingsstr = (settingsfile:read("a") .. "\n") or ""
+    settingsfile:close()
+    settingsfile = nil
+
+    -- Decode string
     local settingstable = {}
-    for VarName,VarValue in string.gmatch(settingsfile:read() or "","(.-): (.-)\n") do
+    for VarName,VarValue in string.gmatch(settingsstr,"(.-): (.-)\n") do
+        print(VarName,VarValue)
         settingstable[VarName] = VarValue
     end
-    settingsfile:close()
+    
+    -- settings class
     local settingsmt = {
         __newindex = function(self,key,value)
             value = string.gsub(value,"\n","%&&&TXTDATA-ES-NEWLINE&&&%")
@@ -18,10 +27,11 @@ local Settings,SaveSettings = {},nil do
     }
     setmetatable(Settings,settingsmt)
 
+    -- save settings func
     SaveSettings = function()
         local Data = ""
         for VarName,VarValue in pairs(settingstable) do
-            Data = Data .. VarName .. ": " .. VarValue
+            Data = Data .. ("%s: %s\n"):format(VarName,VarValue)
         end
         settingsfile = io.open("settings.txt","w")
         settingsfile:write(Data)
@@ -29,6 +39,7 @@ local Settings,SaveSettings = {},nil do
         return true
     end
 end
+
 
 os.execute("mkdocs build")
 os.execute("git add .")
