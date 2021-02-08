@@ -39,12 +39,10 @@ local Settings,SaveSettings = {},nil do
     end
 end
 
+Settings.commit_version = tostring(tonumber(Settings.commit_version) + 1)
+SaveSettings()
+
 os.execute("mkdocs build")
 os.execute("git add .")
 os.execute(("git commit -m \"%s\""):format(Settings.commit_comment):format(Settings.commit_version))
 os.execute("git push")
-
-
-Settings.commit_version = tostring(tonumber(Settings.commit_version) + 1)
-
-SaveSettings()
