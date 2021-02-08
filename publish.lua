@@ -1,4 +1,3 @@
-
 local Settings,SaveSettings = {},nil do
     local settingsfile = io.open("settings.txt","w+")
     local settingstable = {}
