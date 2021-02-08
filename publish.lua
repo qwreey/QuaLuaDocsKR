@@ -42,7 +42,15 @@ end
 Settings.commit_version = tostring(tonumber(Settings.commit_version) + 1)
 SaveSettings()
 
+print("Type comment ...")
+local comment = io.read()
+local CommitText = (Settings.commit_comment):format(Settings.commit_version) .. (comment == "" and "" or (" (%s)"):format(comment))
+
 os.execute("mkdocs build")
 os.execute("git add .")
-os.execute(("git commit -m \"%s\""):format(Settings.commit_comment):format(Settings.commit_version))
+os.execute(("git commit -m \"%s\""):format(CommitText))
 os.execute("git push")
+
+print("\n\n-----------------------")
+print("Published !")
+print("-----------------------\n")
