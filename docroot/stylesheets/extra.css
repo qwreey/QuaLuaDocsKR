@@ -23,7 +23,7 @@ code {
 }
 
 /*svg 글자 선택 불가능하도록 설정*/
-.svgText {
+svg text {
   pointer-events: none;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
