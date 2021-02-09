@@ -33,7 +33,6 @@ svg text {
   -o-user-select:none;
   user-select: none;
 }
-
 /*메크로 변수 리스트 배경 색깔 지정*/
 table.pretty {
   background-color: #262929 !important;
@@ -45,12 +44,40 @@ th {
   color: rgb(255 255 255) !important; /*글자 색깔*/
   background-color: rgb(26 27 31) !important; /*배경 색깔*/
   border-bottom: .05em solid var(--md-accent-fg-color) !important; /*라인*/
+  padding: .85em 0.8em !important; /*주변 남기는 공간 (상하 / 좌우)*/
 }
 /*테이블 아이템 꾸미기*/
 td {
   background-color: rgb(47 49 60) !important; /*배경 색깔*/
+  padding: .7em 0.8em !important; /*주변 남기는 공간 (상하 / 좌우)*/
 }
 
+/*테이블 아이템 크기 (좌우)*/
+#table-em5 {
+  width: 5em !important;
+  min-width: 5em !important;
+}
+#table-em4 {
+  width: 4em !important;
+  min-width: 4em !important;
+}
+#table-em3 {
+  width: 3em !important;
+  min-width: 3em !important;
+}
+#table-em2 {
+  width: 2em !important;
+  min-width: 2em !important;
+}
+#table-em1 {
+  width: 1em !important;
+  min-width: 1em !important;
+}
+#table-custom {
+  min-width: 0em !important;
+}
+
+/*테마 설정*/
 [data-md-color-scheme="custom"] {
   /*글자 색깔*/
   --md-default-fg-color: rgb(225, 215, 225);

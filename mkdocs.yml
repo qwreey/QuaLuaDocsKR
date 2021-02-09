@@ -89,7 +89,7 @@ markdown_extensions:
     - admonition # 노트라인
     - pymdownx.details # 더보기(확장 가능한 라벨)
     - pymdownx.progressbar # 프로그래스 바
-    - attr_list # 리스트 추가사항
+    - attr_list # ID 붙이기
     - def_list # 기본 리스트
 
     # 기초 설정
@@ -110,7 +110,7 @@ markdown_extensions:
         fractions: false
     - markdown_include.include: # 다른 md 파일 가져와서 보여주기
         base_path: docroot
-    
+
     # 기타 세부 설정
     - codehilite: # 코드 언어 추측 끄기
           guess_lang: false
