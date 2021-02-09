@@ -1,2 +1,2 @@
-commit_version: 572
+commit_version: 573
 commit_comment: publish %s
