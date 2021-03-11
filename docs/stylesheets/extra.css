@@ -38,6 +38,12 @@ table.pretty {
   background-color: #262929 !important;
 }
 
+/*메뉴 열면 배경 블러효과 주기*/
+.md-overlay {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  backdrop-filter: blur(24px);
+}
+
 /*테이블 해더 꾸미기*/
 th {
   min-width: 5.8em !important; /*최소 길이*/
